@@ -73,4 +73,58 @@ def distance(x1,y1,x2,y2):
 x=distance(1,1,4,5)
 print(x)
 
+def sum(x,y):
+    return x+y
+
+
+p=int(input("Give first number"))
+q=int(input("Give 2nd number"))
+e=sum(p,q)
+print(e)
+
+def captial(username):
+    str=username.capitalize()
+    print(str)
+
+string=input('Enter your name:  ')
+captial(string)
+
+#concetanation
+
+def name(firstname,lastname):
+    fullname=firstname+" "+lastname
+    print(f"Username : {fullname}")
+
+str1=input('Give first name: ')
+str2=input('Give last name: ')
+
+name(str1,str2)
+
+
+#Return max and min numbers
+#Given  some students number, find the top performer and bottom one
+
+def minimax(listt):
+    return max(listt),min(listt)
+
+marks=[50,47,68,92,79,64,43,98,57,68]
+top,bottom = minimax(marks)
+print(f"The top scorer got {top} marks")
+print(f"The minimum scorer got {bottom} marks")
+
+
+#define a function that only adults can vote
+
+def vote(age):
+    if(age<18):
+        return False
+    else:
+        return True
+    
+a=int(input('Enter your age:        '))
+flag : bool=vote(a)
+if(flag==True):
+    print('eligible to vote')
+else:
+    print('can not vote')
 
